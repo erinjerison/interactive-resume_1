@@ -1,0 +1,93 @@
+var work = {
+  "jobs": [
+    {
+      "employer": "Udacity",
+      "title": "Course Developer",
+      "location": "Mountain View, CA",
+      "dates": "Feb 2014 - Current",
+      "description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+    },
+    {
+      "employer": "LearnBIG",
+      "title": "Software Engineer",
+      "location": "Seattle, WA",
+      "dates": "May 2013 - Jan 2014",
+      "description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+    },
+    {
+      "employer": "LEAD Academy Charter High School",
+      "title": "Science Teacher",
+      "location": "Nashville, TN",
+      "dates": "Jul 2012 - May 2013",
+      "description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+    },
+    {
+      "employer": "Stratford High School",
+      "title": "Science Teacher",
+      "location": "Nashville, TN",
+      "dates": "Jun 2009 - Jun 2012",
+      "description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
+    }
+  ]
+};
+
+// Your code goes here! Let me help you get started
+
+function locationizer() {
+	// pull in work locations
+	var location = work.jobs[location];
+	
+	// add the location to an array
+	var locArray = new Array(location).push;
+	
+	// return the array
+	return locArray();
+}
+
+// Did locationizer() work? This line will tell you!
+console.log(locationizer(work));
+
+//// for loop to iterate through and display all jobs in the work object
+//// REMINDER FOR FUTURE PURPOSES:
+//// WHAT TRIPPED YOU UP WAS REMEMBERING TO CALL A PROPERTY WITHIN THE WORK OBJECT (.jobs)
+//for (job in work.jobs) {
+//	// create a new div that will contain each job
+//	$("#workExperience").append(HTMLworkStart);
+//	
+//	// create variables to format each employer's info
+//	var formatEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
+//	var formatTitle = HTMLworkTitle.replace("%data%",work.jobs[job].title);
+//	var formatEmplDates = HTMLworkDates.replace("%data%",work.jobs[job].dates);
+//	var formatEmplLoc = HTMLworkLocation.replace("%data%",work.jobs[job].location);
+//	var formatDesc = HTMLworkDescription.replace("%data%",work.jobs[job].desc);
+//	
+//	// concatenate employer and job title
+//	var workEntry = formatEmployer+formatTitle;
+//	
+//	// display them
+//	// FOR THE FUTURE --
+//	// REMEMBER TO USE THE # TO CALL A CLASS
+//	// USE THE . TO CALL A MODIFIER OF A CLASS
+//	$(".work-entry:last").append(workEntry);
+//	$(".work-entry:last").append(formatEmplLoc);
+//	$(".work-entry:last").append(formatEmplDates);
+//	$(".work-entry:last").append(formatDesc);
+//};
+
+////for-in loop to call project into document
+//for (project in projects.projects) {
+//    // create a new div that will contain each project
+//    $("#projects").append(HTMLprojectStart);
+//
+//    // create variables to format proj info
+//    var formatPjName = HTMLprojectTitle.replace("%data%",projects.projects[project].title);
+//    var formatPjDate = HTMLprojectDates.replace("%data%",projects.projects[project].dates);
+//    var formatPjDesc = HTMLprojectDescription.replace("%data%",projects.projects[project].description);
+//    var formatPjImg = HTMLprojectImage.replace("%data%",projects.projects[project].images);
+//    
+//    // display them
+//    $(".project-entry:last").append(formatPjName);
+//    $(".project-entry:last").append(formatPjDate);
+//    $(".project-entry:last").append(formatPjDesc);
+//    $(".project-entry:last").append(formatPjImg);
+//}
